@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div >
       <nav className='flex justify-between mt-7 bg-blue-500 sticky z-50'>
-        <NavLink to='/'><img src="../../src/assets/img/Discount me-01-01 1.png" alt="discount"height={170} width={170} /></NavLink>
+        <NavLink to='/'><img src="../../public/img/Discount me-01-01 1.png" alt="discount"height={170} width={170} /></NavLink>
         <div className="flex items-center border-2 border-gray-300 rounded-full overflow-hidden">
   <div className="-ml-5 text-gray-400">
     <svg
