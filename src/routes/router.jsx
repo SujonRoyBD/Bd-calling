@@ -6,6 +6,8 @@ import Error from "../Component/Error";
 import About from "../Component/About";
 import VewRestuarent from "../Component/vewRestuarent/VewRestuarent";
 import ViewTratoria from "../Component/ViewTratoria/ViewTratoria";
+import ViewCart from "../Component/ViewCart/ViewCart";
+import TshirtCtagory from "../Component/TshirtCtagory/TshirtCtagory";
 
 export const router =createBrowserRouter([
     {
@@ -32,6 +34,14 @@ export const router =createBrowserRouter([
                 path:'/viewtarial',
                 element:<ViewTratoria/>
             },
+            {
+                path:'/viewCart',
+                element:<ViewCart/>
+            },
+            {
+                path:'/tshirtcatagory',
+                element:<TshirtCtagory/>
+            }
         ]
     }
 ])

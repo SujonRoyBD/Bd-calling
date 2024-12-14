@@ -5,8 +5,7 @@ import { IoMdStar } from "react-icons/io";
 import { PiFireFill } from "react-icons/pi";
 import Items from '../Items/Items';
 import TshirtView1 from '../TshirtView1/TshirtView1';
-
-
+import { Link } from 'react-router-dom';
 
 
 const ViewTratoria = () => {
@@ -35,10 +34,12 @@ const ViewTratoria = () => {
     </div>
     <div className='flex justify-between'> 
         <h3 className='flex gap-7 text-2xl'>Items < PiFireFill className='mt-1 text-orange-500'/> </h3>
-        <button className='bg-green-200 px-3 rounded-full'>see all</button>
+        {/*  */}
+        <Link to="/viewcart"><button className='bg-green-200 px-3 rounded-full'>see all</button></Link>
     </div>
     <Items/>
     <TshirtView1/>
+    
        </div>
        
   ) 
