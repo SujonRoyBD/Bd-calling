@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className='hidden md:block'>
         <nav className=' flex items-center justify-between bg-blue-500'>
           <NavLink to='/'>
-          <img src="../../public/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
+          <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </NavLink>
           <div className="flex items-center border-2 border-gray-300 rounded-full overflow-hidden">
             <div className="-ml-5 text-gray-400">
