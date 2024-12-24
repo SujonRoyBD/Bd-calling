@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className='block md:hidden'>
         <div className='flex items-center justify-between px-4 py-1 bg-white'>
           <div>
-            <img src="../../public/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
+            <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </div>
           <div className='cursor-pointer' onClick={() => setIsActive(!isActive)}>
             {
