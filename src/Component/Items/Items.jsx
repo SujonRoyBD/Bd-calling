@@ -3,51 +3,51 @@ import React from 'react'
 const Items = () => {
     const data = [
         {
-            img:"../../../src/assets/img/milk (1).webp",
+            img:"../../../public/assets/img/milk (1).webp",
             title:"Milk"
         },
         {
-            img:"../../../src/assets/img/milk (1).webp",
+            img:"../../../public/assets/img/milk (1).webp",
             title:"Milk"
         },
         {
-            img:"../../../src/assets/img/milk (1).webp",
+            img:"../../../public/assets/img/milk (1).webp",
             title:"Milk"
         },
         {
-            img:"../../../src/assets/img/t_shirt.webp",
+            img:"../../../public/assets/img/t_shirt.webp",
             title:"T Shirt"
         },
         {
-            img:"../../../src/assets/img/dessert.webp",
+            img:"../../../public/assets/img/dessert.webp",
             title:"Dessert"
         },
         {
-            img:"../../../src/assets/img/toy.webp",
+            img:"../../../public/assets/img/toy.webp",
             title:"Toy"
         },
         {
-            img:"../../../src/assets/img/book.webp",
+            img:"../../../public/assets/img/book.webp",
             title:"Book"
         },
         {
-            img:"../../../src/assets/img/dessert (1).webp",
+            img:"../../../public/assets/img/dessert (1).webp",
             title:"Dessert"
         },
         {
-            img:"../../../src/assets/img/noodles (1).webp",
+            img:"../../../public/assets/img/noodles (1).webp",
             title:"Noodles"
         },
         {
-            img:"../../../src/assets/img/milk (1).webp",
+            img:"../../../public/assets/img/milk (1).webp",
             title:"Milk"
         },
         {
-            img:"../../../src/assets/img/noodles (1).webp",
+            img:"../../../public/assets/img/noodles (1).webp",
             title:"Noodles"
         },
         {
-            img:"../../../src/assets/img/rice.webp",
+            img:"../../../public/assets/img/rice.webp",
             title:"Rice"
         },
     ]

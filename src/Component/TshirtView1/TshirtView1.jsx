@@ -5,55 +5,55 @@ import { Link } from 'react-router-dom'
 const TshirtView1 = () => {
   const data = [
     {
-      img:"../../../src/assets/img/long_t_shirt (1).webp",
+      img:"../../../public/assets/img/long_t_shirt (1).webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/long_t_shirt (1).webp",
+      img:"../../../public/assets/img/long_t_shirt (1).webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/crazyfood.webp",
+      img:"../../../public/assets/img/crazyfood.webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/crazyfood.webp",
+      img:"../../../public/assets/img/crazyfood.webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/book (2).webp",
+      img:"../../../public/assets/img/book (2).webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/crazy_toy.webp",
+      img:"../../../public/assets/img/crazy_toy.webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/crazyfood.webp",
+      img:"../../../public/assets/img/crazyfood.webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/book (2).webp",
+      img:"../../../public/assets/img/book (2).webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     },
     {
-      img:"../../../src/assets/img/crazy_toy.webp",
+      img:"../../../public/assets/img/crazy_toy.webp",
       title:"Long Sleeve T-shirt",
       desc:"Delicious tackos appetizing",
       pirce:"45.5"

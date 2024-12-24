@@ -3,54 +3,54 @@ import React from 'react';
 const Restuarent1 = () => {
     const view =[
         {
-            img:"../../../src/assets/img/Food1.png",
+            img:"../../../public/assets/img/Food1.png",
             titel:"Skateboard Shoe",
             price:"$125"
         },
         {
-            img:"../../../src/assets/img/food2.png",
+            img:"../../../public/assets/img/food2.png",
             
               titel:"Skateboard Shoe",
             price:"$125"
         },
         {
-            img:"../../../src/assets/img/food3.png",
+            img:"../../../public/assets/img/food3.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food4.png",
+            img:"../../../public/assets/img/food4.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food5.png",
+            img:"../../../public/assets/img/food5.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food6.png",
+            img:"../../../public/assets/img/food6.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food7.png",
+            img:"../../../public/assets/img/food7.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food8.png",
+            img:"../../../public/assets/img/food8.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/food5.png",
+            img:"../../../public/assets/img/food5.png",
             titel:"Skateboard Shoe",
             price:"$125"
           

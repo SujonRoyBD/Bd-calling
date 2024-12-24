@@ -21,7 +21,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="../../../src/assets/img/home_banner_bg.webp" alt="banner" height={300} width={500} />
+                    <img src="../../../public/assets/img/home_banner_bg.webp" alt="banner" height={300} width={500} />
                 </div>
             </div>
 

@@ -4,54 +4,54 @@ import { Link } from 'react-router-dom';
 const VewRestuarent = () => {
     const view =[
         {
-            img:"../../../src/assets/img/Kitchen1.png",
+            img:"../../../public/assets/img/Kitchen1.png",
             titel:"Skateboard Shoe",
             price:"$125"
         },
         {
-            img:"../../../src/assets/img/Kitchen2.png",
+            img:"../../../public/assets/img/Kitchen2.png",
             
               titel:"Skateboard Shoe",
             price:"$125"
         },
         {
-            img:"../../../src/assets/img/Kitchen3.png",
+            img:"../../../public/assets/img/Kitchen3.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen4.png",
+            img:"../../../public/assets/img/Kitchen4.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen5.png",
+            img:"../../../public/assets/img/Kitchen5.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen6.png",
+            img:"../../../public/assets/img/Kitchen6.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen7.png",
+            img:"../../../public/assets/img/Kitchen7.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen3.png",
+            img:"../../../public/assets/img/Kitchen3.png",
             titel:"Skateboard Shoe",
             price:"$125"
           
         },
         {
-            img:"../../../src/assets/img/Kitchen9.png",
+            img:"../../../public/assets/img/Kitchen9.png",
             titel:"Skateboard Shoe",
             price:"$125"
           

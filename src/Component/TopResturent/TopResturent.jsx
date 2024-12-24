@@ -11,7 +11,7 @@ const TopResturent = () => {
     const data = [
 
         {
-            img: "../../../src/assets/img/Kitchen1.png",
+            img: "../../../public/assets/img/Kitchen1.png",
             title: "Trattoria dall'Oste",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {
@@ -20,7 +20,7 @@ const TopResturent = () => {
             }
         },
         {
-            img: "../../../src/assets/img/Kitchen2.png",
+            img: "../../../public/assets/img/Kitchen2.png",
             title: "Trattoria dall'Oste",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {
@@ -29,7 +29,7 @@ const TopResturent = () => {
             }
         },
         {
-            img: "../../../src/assets/img/Kitchen3.png",
+            img: "../../../public/assets/img/Kitchen3.png",
             title: "Trattoria dall'Oste",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {

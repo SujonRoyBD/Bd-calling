@@ -13,7 +13,7 @@ const ViewTratoria = () => {
   return (
     <div className='px-20 mt-7'>
       <div>
-        <img src="../../../src/assets/img/thumbnail.png" alt="thumbinal"height={300} width={1200} />
+        <img src="../../../public/assets/img/thumbnail.png" alt="thumbinal"height={300} width={1200} />
         <h2 className='text-2xl font-bold'>Trattoria dall'Oste</h2>
         <hr className='h-1 w- bg-gray-400 mb-9' />
         <div className='flex gap-[70px]'>

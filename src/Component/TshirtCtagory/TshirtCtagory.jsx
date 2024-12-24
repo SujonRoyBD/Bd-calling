@@ -11,25 +11,25 @@ import { Link } from 'react-router-dom';
 const TshirtCtagory = () => {
   const cheakout = [
     {
-        img:"../../../src/assets/img/kristin.webp",
+        img:"../../../public/assets/img/kristin.webp",
         title:"Kristin Watson",
         time:"2 min ago",
         desc:"Duis at ullamcorper nulla, eu dictum eros."
     },
     {
-        img:"../../../src/assets/img/jane.webp",
+        img:"../../../public/assets/img/jane.webp",
         title:"Jane Cooper",
         time:"30 Apr, 2021",
         desc:"Keep the soil evenly moist for the healthiest growth. If the sun gets too hot, Chinese cabbage tends to 'bolt' or go to seed; in long periods of heat, some kind of shade may be helpful. Watch out for snails, as they will harm the plants."
     },
     {
-        img:"../../../src/assets/img/jacob.webp",
+        img:"../../../public/assets/img/jacob.webp",
         title:"Jacob Jones",
         time:"2 min ago",
         desc:"Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus."
     },
     {
-        img:"../../../src/assets/img/ralph.webp",
+        img:"../../../public/assets/img/ralph.webp",
         title:"Ralph Edwards",
         time:"2 min ago",
         desc:"200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA"
@@ -37,10 +37,10 @@ const TshirtCtagory = () => {
 ]
   return (
     <div className='px-20 '>
-      <img src="../../../src/assets/img/image.png" alt="bg" />
+      <img src="../../../public/assets/img/image.png" alt="bg" />
       <div className='grid grid-cols-1 md:grid-cols-2 mt-7'>
         <div>
-            <img src="../../../src/assets/img/long_t_shirt (1).webp" alt="rrt" />
+            <img src="../../../public/assets/img/long_t_shirt (1).webp" alt="rrt" />
         </div>
         <div>
             <div className='flex gap-8'>

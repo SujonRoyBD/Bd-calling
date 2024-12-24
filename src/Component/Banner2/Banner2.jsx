@@ -4,25 +4,25 @@ const Banner2 = () => {
    const data = [
         {
             id:1,
-            img:"../../../src/assets/img/discount.webp",
+            img:"../../../public/assets/img/discount.webp",
             title:"Discount",
             desc:"Every week new sales"
         },
         {
             id:2,
-            img:"../../../src/assets/img/delivery.webp",
+            img:"../../../public/assets/img/delivery.webp",
             title:"Discount",
             desc:"Every week new sales"
         },
         {
             id:1,
-            img:"../../../src/assets/img/support.webp",
+            img:"../../../public/assets/img/support.webp",
             title:"Discount",
             desc:"Every week new sales"
         },
         {
             id:1,
-            img:"../../../src/assets/img/secure.webp",
+            img:"../../../public/assets/img/secure.webp",
             title:"Discount",
             desc:"Every week new sales"
         }

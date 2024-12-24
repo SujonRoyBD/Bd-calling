@@ -11,7 +11,9 @@ const Navbar = () => {
       {/* large device  */}
       <div className='hidden md:block'>
         <nav className=' flex items-center justify-between bg-blue-500'>
-          <NavLink to='/'><img src="../../src/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} /></NavLink>
+          <NavLink to='/'>
+          <img src="../../public/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
+          </NavLink>
           <div className="flex items-center border-2 border-gray-300 rounded-full overflow-hidden">
             <div className="-ml-5 text-gray-400">
               <svg
@@ -50,29 +52,29 @@ const Navbar = () => {
 
       {/* small device  */}
       <div className='block md:hidden'>
-          <div className='flex items-center justify-between px-4 py-1 bg-white'>
-            <div>
-            <img src="../../src/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
-            </div>
-            <div className='cursor-pointer' onClick={()=> setIsActive(!isActive)}>
-              {
-                isActive ? <IoMenu className='w-[32px] h-[32px]'/> : <RxCross2 className='w-[32px] h-[32px]'/>
-              }
-            </div>
-          </div>
-          {/* menu open */}
+        <div className='flex items-center justify-between px-4 py-1 bg-white'>
           <div>
-              {
-                !isActive && (
-                  <nav className='w-2/3 bg-gray-200 text-black flex flex-col items-center py-3'>
-                    <NavLink>Home</NavLink>
-                    <NavLink>About</NavLink>
-                    <NavLink>Blog</NavLink>
-                    <NavLink>Contact Us</NavLink>
-                  </nav>
-                )
-              }
+            <img src="../../public/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </div>
+          <div className='cursor-pointer' onClick={() => setIsActive(!isActive)}>
+            {
+              isActive ? <IoMenu className='w-[32px] h-[32px]' /> : <RxCross2 className='w-[32px] h-[32px]' />
+            }
+          </div>
+        </div>
+        {/* menu open */}
+        <div>
+          {
+            !isActive && (
+              <nav className='w-2/3 bg-gray-200 text-black flex flex-col items-center py-3'>
+                <NavLink>Home</NavLink>
+                <NavLink>About</NavLink>
+                <NavLink>Blog</NavLink>
+                <NavLink>Contact Us</NavLink>
+              </nav>
+            )
+          }
+        </div>
       </div>
     </div>
   )
