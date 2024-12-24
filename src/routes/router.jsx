@@ -8,6 +8,8 @@ import VewRestuarent from "../Component/vewRestuarent/VewRestuarent";
 import ViewTratoria from "../Component/ViewTratoria/ViewTratoria";
 import ViewCart from "../Component/ViewCart/ViewCart";
 import TshirtCtagory from "../Component/TshirtCtagory/TshirtCtagory";
+import Login from "../Component/Login/Login";
+import CheckoutFrom from "../Component/CheckoutFrom/CheckoutFrom";
 
 export const router =createBrowserRouter([
     {
@@ -41,6 +43,14 @@ export const router =createBrowserRouter([
             {
                 path:'/tshirtcatagory',
                 element:<TshirtCtagory/>
+            },
+            {
+                path:'/login',
+                element:<Login/>
+            },
+            {
+                path:'/cheakout',
+                element:<CheckoutFrom/>
             }
         ]
     }
