@@ -5,73 +5,73 @@ import { Link } from 'react-router-dom'
 const ViewCart = () => {
     const data =[
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/crazyfood.webp",
+            img:"/assets/img/crazyfood.webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/crazyfood.webp",
+            img:"/assets/img/crazyfood.webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/crazyfood.webp",
+            img:"/assets/img/crazyfood.webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/long_t_shirt (1).webp",
+            img:"/assets/img/long_t_shirt (1).webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
-            img:"../../../public/assets/img/crazyfood.webp",
+            img:"/assets/img/crazyfood.webp",
             title:"Long Sleeve T-shirt",
             desc:"Delicious tackos appetizing",
             price:"4.5"
