@@ -10,6 +10,7 @@ import ViewCart from "../Component/ViewCart/ViewCart";
 import TshirtCtagory from "../Component/TshirtCtagory/TshirtCtagory";
 import Login from "../Component/Login/Login";
 import CheckoutFrom from "../Component/CheckoutFrom/CheckoutFrom";
+import ViewTopRestaurant from "../Component/ViewTopRestaurant/ViewTopRestaurant";
 
 export const router =createBrowserRouter([
     {
@@ -19,6 +20,10 @@ export const router =createBrowserRouter([
             {
                 path:'/',
                 element:<Home/>
+            },
+            {
+                path:'/view-top-restaurant/:title',
+                element:<ViewTopRestaurant/>
             },
             {
                 path:'/about',

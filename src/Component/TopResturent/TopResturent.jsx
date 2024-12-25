@@ -12,7 +12,7 @@ const TopResturent = () => {
 
         {
             img: "/assets/img/Kitchen1.png",
-            title: "Trattoria dall'Oste",
+            title: "Trattoria dall'Oste 1",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {
                 main: "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
@@ -21,7 +21,7 @@ const TopResturent = () => {
         },
         {
             img: "/assets/img/Kitchen2.png",
-            title: "Trattoria dall'Oste",
+            title: "Trattoria dall'Oste 2",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {
                 main: "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
@@ -30,7 +30,7 @@ const TopResturent = () => {
         },
         {
             img: "/assets/img/Kitchen3.png",
-            title: "Trattoria dall'Oste",
+            title: "Trattoria dall'Oste 3",
             location: "Via Luigi Alamanni, 3, 50123 Firenze",
             desc: {
                 main: "Featuring seasonal and sustainable seafood that is flown in fresh daily, our chef-driven menu proves that no matter when you're dining, seafood can be truly exceptional.",
@@ -58,7 +58,7 @@ const TopResturent = () => {
                         return (
                             <div key={index} className='border-2 px-6 py-6  rounded-lg'>
                                 <img src={data.img} alt="kitchen" height={100} width={300} />
-                                <h2 className='flex gap-3 font-bold text-2xl'>
+                                <h2 className='flex gap-3 font-bold text-xl'>
                                     {data.title}
                                     <MdOutlineStarPurple500 className='text-yellow-400 h-9 w-7' /> (4.5)
                                 </h2>
@@ -69,7 +69,10 @@ const TopResturent = () => {
                                     <h2 className=''>
                                         <span>{data.desc.readMore}</span>
                                     </h2>
+                                    <Link to={`/view-top-restaurant/${data?.title}`}>
                                     <button className='text-center bg-green-500 w-full rounded-lg py-2'>Visit</button>
+                                    </Link>
+                                    
                                 </div>
                             </div>
                         );
