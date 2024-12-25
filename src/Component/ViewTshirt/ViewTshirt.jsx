@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const TshirtView1 = () => {
-  const data = [
+const data = [
     {
       img:"/assets/img/long_t_shirt (1).webp",
       title:"Long Sleeve T-shirt 1",
@@ -57,34 +56,32 @@ const TshirtView1 = () => {
       desc:"Delicious tackos appetizing",
       pirce:"45.5"
     }
-  ]
+  ];
 
-  return (
-    <div className=''>
-      <div className='grid grid-cols-1 md:grid-cols-3 mt-7 gap-3 mb-3'>
-        {
-          data.map((shirt)=>{
-            return <div key={shirt} className='mt-9' >
-              
-           
-              <img src={shirt.img} alt="dd" />
-              <div className='flex gap-8'>
-              <div>
-              {/* <a href=""className='text-2xl'>{shirt.title}</a> */}
-              <Link to={`/viewTshirt/${shirt?.title}`}>{shirt.title}</Link>
-              <h2>{shirt.desc}</h2>
-              </div>
-             
-              <div className='mt-5 text-2xl'>
-              <h2>{shirt.pirce}</h2>
-              </div>
-             </div>
-            </div>
-          })
-        }
-      </div>
-    </div>
- )
-}
+const ViewTshirt = () => {
+    const {title} = useParams();
+    const filterData = data?.filter((data)=> data?.title === title)
+    console.log(filterData)
+    return (
+        <div>
+            {
+                filterData?.map((data, index)=>(
+                    <div key={index} className='w-full flex justify-center items-center gap-5'>
+                        <div className='w-1/2'>
+                            <img src={data?.img} alt={data?.title} width={500} height={400}/>
+                        </div>
+                        <div className='w-1/2'>
+                            <h3>{data?.title}</h3>
+                            <h3>{data?.location}</h3>
+                            <p>{data?.desc?.main}</p>
+                            <button>Add to Cart</button>
+                            <button>Checkout</button>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    );
+};
 
-export default TshirtView1
+export default ViewTshirt;

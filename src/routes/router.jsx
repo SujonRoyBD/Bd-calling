@@ -11,6 +11,8 @@ import TshirtCtagory from "../Component/TshirtCtagory/TshirtCtagory";
 import Login from "../Component/Login/Login";
 import CheckoutFrom from "../Component/CheckoutFrom/CheckoutFrom";
 import ViewTopRestaurant from "../Component/ViewTopRestaurant/ViewTopRestaurant";
+import ViewTshirt from "../Component/ViewTshirt/ViewTshirt";
+import ViewLongTshirt from "../Component/ViewLongTshirt/ViewLongTshirt";
 
 export const router =createBrowserRouter([
     {
@@ -36,6 +38,14 @@ export const router =createBrowserRouter([
             {
                 path:'/vewresturent',
                 element:<VewRestuarent></VewRestuarent>
+            },
+            {
+                path:'/viewTshirt/:title',
+                element:<ViewTshirt/>
+            },
+            {
+                path:'/viewLongTshirt/:title',
+                element:<ViewLongTshirt/>
             },
             {
                 path:'/viewtarial',

@@ -6,73 +6,73 @@ const ViewCart = () => {
     const data =[
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 1",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 2",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/crazyfood.webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 3",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 4",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 5",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/crazyfood.webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 6",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 7",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 8",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/crazyfood.webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 9",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 10",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/long_t_shirt (1).webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 11",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         },
         {
             img:"/assets/img/crazyfood.webp",
-            title:"Long Sleeve T-shirt",
+            title:"Long Sleeve T-shirt 12",
             desc:"Delicious tackos appetizing",
             price:"4.5"
         }
@@ -87,7 +87,7 @@ const ViewCart = () => {
                     <img src={data.img} alt="tshirt" height={300} width={350} />
                   <div className='flex gap-5'>
                   <div>
-                   <Link to="/tshirtcatagory"><h2>{data.title}</h2></Link>
+                     <Link to={`/viewLongTshirt/${data?.title}`}>{data.title}</Link>
                    <h2>{data.desc}</h2>
                    </div>
                      <div className='mt-3 text-2xl'>
