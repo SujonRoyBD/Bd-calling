@@ -87,7 +87,8 @@ const ViewCart = () => {
                     <img src={data.img} alt="tshirt" height={300} width={350} />
                   <div className='flex gap-5'>
                   <div>
-                     <Link to={`/viewLongTshirt/${data?.title}`}>{data.title}</Link>
+                     {/* <Link to={`/viewLongTshirt/${data?.title}`}>{data.title}</Link> */}
+                     <Link to={`/viewLogoTshirt/${data.title}`}>{data.title}</Link>
                    <h2>{data.desc}</h2>
                    </div>
                      <div className='mt-3 text-2xl'>
