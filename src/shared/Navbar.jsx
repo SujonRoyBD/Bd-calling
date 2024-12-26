@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className={`fixed top-16 right-[180px] ${isOpen && "bg-gray-950"}  text-white px-4 py-2 -mt-[2px]`}>
             {
               isOpen && <ul>
-                <li>Ho</li>
+                <li>Home</li>
                 <li>About</li>
                 <li>Blog</li>
                 <li>Contact</li>
