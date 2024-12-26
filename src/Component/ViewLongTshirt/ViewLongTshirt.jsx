@@ -1,5 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Login from '../Login/Login';
+import CheackoutFrom from '../CheckoutFrom/CheckoutFrom';
 
 const data = [
     {
@@ -77,8 +79,11 @@ const data = [
 ];
 
 const ViewTshirt = () => {
+    // const {title} = useParams();
+    // const filterData = data?.filter((data)=> data?.title === title)
+    // console.log(filterData)
     const {title} = useParams();
-    const filterData = data?.filter((data)=> data?.title === title)
+    const filterData= data?.filter((data)=>data?.title===title)
     console.log(filterData)
     return (
         <div>
@@ -98,6 +103,7 @@ const ViewTshirt = () => {
                     </div>
                 ))
             }
+            <CheackoutFrom/>
         </div>
     );
 };

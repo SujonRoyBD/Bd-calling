@@ -2,11 +2,16 @@
     {
         "id":1,
         "title":"uiyuiy",
-        "img":"../src/assets/img/Food1.png"
+        "img":"/assets/img/Food1.png"
+    },
+    {
+        "id":2,
+        "title":"udfdf",
+        "img":"/assets/img/Food2.png"
     },
     {
         "id":3,
         "title":"uiyuj",
-        "img":"../src/assets/img/Food2.png"
+        "img":"/assets/img/Food3.png"
     }
 ]

@@ -13,6 +13,8 @@ import CheckoutFrom from "../Component/CheckoutFrom/CheckoutFrom";
 import ViewTopRestaurant from "../Component/ViewTopRestaurant/ViewTopRestaurant";
 import ViewTshirt from "../Component/ViewTshirt/ViewTshirt";
 import ViewLongTshirt from "../Component/ViewLongTshirt/ViewLongTshirt";
+import Showimg from "../Component/Showimg/Showimg";
+
 
 export const router =createBrowserRouter([
     {
@@ -66,7 +68,12 @@ export const router =createBrowserRouter([
             {
                 path:'/cheakout',
                 element:<CheckoutFrom/>
+            },
+            {
+                path:'/imgView/:id',
+                element:<Showimg/>
             }
+          
         ]
     }
 ])

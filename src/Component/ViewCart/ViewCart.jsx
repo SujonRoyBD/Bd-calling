@@ -88,7 +88,7 @@ const ViewCart = () => {
                   <div className='flex gap-5'>
                   <div>
                      {/* <Link to={`/viewLongTshirt/${data?.title}`}>{data.title}</Link> */}
-                     <Link to={`/viewLogoTshirt/${data.title}`}>{data.title}</Link>
+                     <Link to={`/viewLongTshirt/${data?.title}`}>{data.title}</Link>
                    <h2>{data.desc}</h2>
                    </div>
                      <div className='mt-3 text-2xl'>
