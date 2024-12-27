@@ -14,6 +14,7 @@ import ViewTopRestaurant from "../Component/ViewTopRestaurant/ViewTopRestaurant"
 import ViewTshirt from "../Component/ViewTshirt/ViewTshirt";
 import ViewLongTshirt from "../Component/ViewLongTshirt/ViewLongTshirt";
 import Showimg from "../Component/Showimg/Showimg";
+import Cart from "../Component/Cart/Cart";
 
 
 export const router =createBrowserRouter([
@@ -72,6 +73,10 @@ export const router =createBrowserRouter([
             {
                 path:'/imgView/:id',
                 element:<Showimg/>
+            },
+            {
+                path : "/cart",
+                element : <Cart/>
             }
           
         ]

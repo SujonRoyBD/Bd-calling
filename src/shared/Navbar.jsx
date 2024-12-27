@@ -2,11 +2,17 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
+import { FaCartArrowDown } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
+  const carts = useSelector((state) => state.carts.carts);
   const [isActive, setIsActive] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className='sticky top-0 z-50 py-3'>
       {/* large device  */}
@@ -24,7 +30,7 @@ const Navbar = () => {
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/about'>Blog</NavLink>
-          <NavLink onMouseEnter={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(!isOpen)} to='#category'>Category {!isOpen ? ">" : "<"} </NavLink>
+          <NavLink className="flex items-center gap-1" onMouseEnter={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(!isOpen)} to='#category'>Category {!isOpen ? <MdKeyboardArrowDown className="mt-1" /> : <MdKeyboardArrowUp className="mt-1" />} </NavLink>
           <div className={`fixed top-16 right-[290px] ${isOpen && "bg-gray-950"}  text-white px-4 py-2 -mt-[2px]`}>
             {
               isOpen && <ul>
@@ -36,18 +42,7 @@ const Navbar = () => {
             }
 
           </div>
-          <NavLink onMouseEnter={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(!isOpen)} to='#dropdown'>Dropdown{!isOpen ? ">" : "<"}</NavLink>
-          <div className={`fixed top-16 right-[180px] ${isOpen && "bg-gray-950"}  text-white px-4 py-2 -mt-[2px]`}>
-            {
-              isOpen && <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
-              </ul>
-            }
-
-          </div>
+          <NavLink to="/cart" className="flex items-center gap-1"><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
           <NavLink to='/error'>Error</NavLink>
 
         </nav>
@@ -79,6 +74,7 @@ const Navbar = () => {
           }
         </div>
       </div>
+
     </div>
   )
 }
