@@ -236,7 +236,7 @@ const ViewCart = () => {
                     border: "none",
                   }}
                 >
-                  {clickedItems[item.id] ? "Add": <CiCirclePlus  />}
+                  {clickedItems[item.id] ? "clik": <CiCirclePlus  />}
                 </button>
               </div>
             </div>
