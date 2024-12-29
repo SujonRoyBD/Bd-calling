@@ -153,6 +153,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { CiCirclePlus } from "react-icons/ci";
 import { addToCart } from "../redux/features/carts/cartsSlice";
+import { FaCartArrowDown } from "react-icons/fa";
 
 const ViewCart = () => {
   const [clickedItems, setClickedItems] = useState({});
@@ -215,7 +216,8 @@ const ViewCart = () => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 px-20 mt-5 gap-3">
         {data.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="relative">
+           <div className="absolute"> <FaCartArrowDown className="flex mt-9 ml-[300px] text-white"/></div>
             <img src={item.img} alt="tshirt" height={300} width={350} />
             <div className="flex gap-5">
               <div>
