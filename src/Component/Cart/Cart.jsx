@@ -8,6 +8,7 @@ import { CiCirclePlus } from "react-icons/ci";
 
 const Cart = () => {
     const ProductData = useSelector((state) => state.carts.carts)
+    const totalPrice = ProductData?.reduce((total, item)=> total + (item.quantity * item.price), 0)
     const dispatch = useDispatch();
     const removeCartLogic = (id)=>{
         dispatch(removeCart(id))
@@ -33,11 +34,15 @@ const Cart = () => {
                                 <CiCirclePlus onClick={()=> dispatch(incrementQuantity(data?.id))} className='w-[26px] h-[26px] cursor-pointer'/>
                                 <h3>{data.price}</h3>
                                 <CiCircleRemove onClick={()=>removeCartLogic(data?.id)} className='w-[26px] h-[26px] cursor-pointer'/>
+                                    <h5>{data.quantity * data.price}</h5>
                             </li>
+                            
                         </div>
                     })
                 }
             </ul>
+            <h3 className='text-end w-3/4 text-xl font-bold mt-1'><strong>Total Price : </strong> {totalPrice}</h3>
+           
 
         </div>
     );

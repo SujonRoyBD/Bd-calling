@@ -11,7 +11,7 @@ const Banner = () => {
                 </div>
             <div className='grid grid-cols-1 md:grid-cols-2 px-12'>
                 <div className='mt-[100px]'>
-                    <h3 className='text-6xl text-black font-bold'>Good <strong className='text-red-600'>food</strong>, great <br />
+                    <h3 className='text-6xl text-black font-bold'>this is garate the point  <strong className='text-red-600'>food</strong>, great <br />
                         memories
                     </h3>
                     <p> Enable diners to customize their bookin Enable diners to customize their booking by
