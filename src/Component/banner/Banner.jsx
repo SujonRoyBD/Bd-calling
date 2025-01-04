@@ -14,7 +14,7 @@ const Banner = () => {
                     <h3 className='text-6xl text-black font-bold'>this is garate the point  <strong className='text-red-600'>food</strong>, great <br />
                         memories
                     </h3>
-                    <p> Enable diners to customize their bookin Enable diners to customize their booking by
+                    <p> Enable diners to her customize their bookin Enable diners to customize their booking by
                         requesting  specific table location or view.</p>
                     <div className='border-2 rounded-full '>
                         <div className='flex gap-12 border-2 bg-red-400 w-[200px] rounded-full'>
