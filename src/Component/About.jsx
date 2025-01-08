@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
 Lorem ipsum dolor sit amet,
- consectetur adipisicing elit. Corporis nisi quis necessitatibus magnam sed quod maxime, aspernatur totam impedit recusandae.
+ consecte adipisicing elit. Corporis hard paper baner necessitatibus magnam sed quod maxime, aspernatur aspare impedit recusandae.
 
     </div>
   )
