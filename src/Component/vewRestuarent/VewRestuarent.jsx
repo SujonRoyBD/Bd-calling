@@ -62,7 +62,7 @@ const VewRestuarent = () => {
             <div className='flex justify-between px-20 mt-7'>
             <div>
                     <h2 className='text-3xl '>Expore <strong className='text-orange-600'>Top Restaurants</strong></h2>
-                    <p>Check your city <span className='text-gray-400'>Near by <br />
+                    <p>Check your city and town <span className='text-gray-400'>Near by <br />
                         Restaurant</span></p> 
                 </div>
                 <div>

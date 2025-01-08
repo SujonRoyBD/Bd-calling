@@ -15,7 +15,7 @@ const Banner = () => {
                         memories
                     </h3>
                     <p> Enable diners to her customize their bookin Enable diners to customize their booking by
-                        requesting  specific table location or view.</p>
+                        requesting this prtesr specific table location or view.</p>
                     <div className='border-2 rounded-full '>
                         <div className='flex gap-12 border-2 bg-red-400 w-[200px] rounded-full'>
                             <CiLocationOn className='mt-1'/>
