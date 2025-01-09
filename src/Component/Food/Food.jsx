@@ -3,7 +3,7 @@ import React from 'react'
 const Food = () => {
   return (
     <div>
-      food run 
+      food run fast and honestly compromise
     </div>
   )
 }
