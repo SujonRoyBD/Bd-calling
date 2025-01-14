@@ -66,10 +66,7 @@ const VewRestuarent = () => {
                         Restaurant</span></p> 
                 </div>
                 <div>
-                <div>
-          <input  type='text' placeholder='search'className='border-2 border-black rounded-full text-lg '></input>
-          <button className='rounded-full border-2  text-lg bg-red-500'>serch</button>
-        </div>
+             
                 </div>
             </div>
               

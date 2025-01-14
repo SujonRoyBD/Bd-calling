@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
-  const carts = useSelector((state) => state.carts.carts);
+  const  carts = useSelector((state) => state.carts.carts);
   const [isActive, setIsActive] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +21,7 @@ const Navbar = () => {
           <NavLink to='/'>
             <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </NavLink>
+         
 
           <div className='w-1/4 flex items-center'>
             <input className='py-2 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
@@ -42,7 +43,7 @@ const Navbar = () => {
             }
 
           </div>
-          <NavLink to="/cart" className="flex items-center gap-1"><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
+          <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
           <NavLink to='/error'>Error</NavLink>
 
         </nav>
@@ -52,8 +53,10 @@ const Navbar = () => {
       <div className='block md:hidden'>
         <div className='flex items-center justify-between px-4 py-1 bg-white -mt-5'>
           <div>
-            <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
+            <NavLink to="/"><img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} /></NavLink>
           </div>
+          <div><NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-black text-3xl' /> <sup className='text-black text-2xl'>{carts.length}</sup> </NavLink></div>
+
           <div className='cursor-pointer' onClick={() => setIsActive(!isActive)}>
             {
               isActive ? <IoMenu className='w-[32px] h-[32px]' /> : <RxCross2 className='w-[32px] h-[32px]' />
@@ -69,6 +72,8 @@ const Navbar = () => {
                 <NavLink to='about'>About</NavLink>
                 <NavLink to='blog'>Blog</NavLink>
                 <NavLink to='contact us'>Contact Us</NavLink>
+                <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
+                
               </nav>
             )
           }

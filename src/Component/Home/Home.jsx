@@ -10,7 +10,6 @@ const Home = () => {
     <div>
     
       <Banner />
-     <ImgView/>
       <Banner2 />
       <TopResturent />
       <Restuarent1 />
