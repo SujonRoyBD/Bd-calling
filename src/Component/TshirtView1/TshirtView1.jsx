@@ -69,9 +69,9 @@ const TshirtView1 = () => {
            
               <img src={shirt.img} alt="dd" />
               <div className='flex gap-8'>
-              <div>
+              <div className=''>
               {/* <a href=""className='text-2xl'>{shirt.title}</a> */}
-              <Link to={`/viewTshirt/${shirt?.title}`}>{shirt.title}</Link>
+              <Link to={`/viewTshirt/${shirt?.title}`} className='text-2xl font-bold'>{shirt.title}</Link>
               <h2>{shirt.desc}</h2>
               </div>
              

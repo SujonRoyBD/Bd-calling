@@ -35,7 +35,7 @@ const ViewCart = () => {
             <img src={item.img} alt="tshirt" height={300} width={350} />
             <div className="flex gap-5">
               <div>
-                <Link to={`/viewLongTshirt/${item.title}`}>{item.title}</Link>
+                <Link to={`/viewLongTshirt/${item.title}`} className='text-2xl font-bold'>{item.title}</Link>
                 <h2>{item.desc}</h2>
               </div>
               <div className="flex items-center gap-5 mt-3 text-2xl">
