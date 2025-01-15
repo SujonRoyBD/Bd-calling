@@ -24,13 +24,13 @@ const Navbar = () => {
          
 
           <div className='w-1/4 flex items-center'>
-            <input className='py-2 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
-            <button className='bg-orange-500 text-white text-lg font-bold rounded-r-full py-2 px-4'>Search</button>
+            <input className='py-1 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
+            <button className='bg-orange-500 text-white text-lg font-bold rounded-r-full py-1 px-4'>Search</button>
           </div>
 
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
-          <NavLink to='/about'>Blog</NavLink>
+          <NavLink to='/dashboard'>Dashboard</NavLink>
           <NavLink className="flex items-center gap-1" onMouseEnter={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(!isOpen)} to='#category'>Category {!isOpen ? <MdKeyboardArrowDown className="mt-1" /> : <MdKeyboardArrowUp className="mt-1" />} </NavLink>
           <div className={`fixed top-16 right-[290px] ${isOpen && "bg-gray-950"}  text-white px-4 py-2 -mt-[2px]`}>
             {
@@ -64,10 +64,12 @@ const Navbar = () => {
           </div>
         </div>
         {/* menu open */}
-        <div className={`{!isActive ? "left-0 w-2/3": "-left-[100%] w-full"} bg-orange-500 fixed h-[400px] top-10`}>
+        <div className='bg-orange-500'>
+        {/* <div className={`{!isActive ? "left-0 w-2/3": "-left-[100%] w-full"} bg-orange-500 fixed h-[400px] top-10`}> */}
           {
             !isActive && (
               <nav className='w-full text-black flex flex-col pl-4 pr-28 py-3'>
+               <NavLink to='dashboard'>Dashboard</NavLink>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
                 <NavLink to='blog'>Blog</NavLink>
