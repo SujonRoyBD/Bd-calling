@@ -6,6 +6,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { useSelector } from 'react-redux';
+import { RiUser3Line } from "react-icons/ri";
 
 
 const Navbar = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
 
           </div>
           <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
-          <NavLink to='/error'>Error</NavLink>
+          <NavLink to='/login'><RiUser3Line className='text-2xl'/></NavLink>
 
         </nav>
       </div>
@@ -72,9 +73,9 @@ const Navbar = () => {
                <NavLink to='dashboard'>Dashboard</NavLink>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
-                <NavLink to='blog'>Blog</NavLink>
-                <NavLink to='contact us'>Contact Us</NavLink>
-                <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
+                
+                <NavLink to='/vewresturent'>Contact Us</NavLink>
+                {/* <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink> */}
                 
               </nav>
             )

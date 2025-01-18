@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { decrementQuantity, incrementQuantity, removeCart } from '../redux/features/carts/cartsSlice';
 import { IoIosRemoveCircleOutline } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
+import CheackoutFrom from '../CheckoutFrom/CheckoutFrom';
 
 const Cart = () => {
     const ProductData = useSelector((state) => state.carts.carts)
@@ -41,6 +42,7 @@ const Cart = () => {
                     })
                 }
             </ul>
+            <CheackoutFrom/>
             <h3 className='text-end w-3/4 text-xl font-bold mt-1'><strong>Total Price : </strong> {totalPrice}</h3>
            
 

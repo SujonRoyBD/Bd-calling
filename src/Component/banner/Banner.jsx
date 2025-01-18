@@ -1,5 +1,7 @@
 import React from 'react'
 import { CiLocationOn } from "react-icons/ci";
+import Show from '../Show/Show';
+
 
 
 const Banner = () => {
@@ -28,7 +30,7 @@ const Banner = () => {
                     <img src="/assets/img/home_banner_bg.webp" alt="banner" height={300} width={500} />
                 </div>
             </div>
-
+            <Show/>
         </div>
     )
 }

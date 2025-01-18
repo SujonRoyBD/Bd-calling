@@ -1,7 +1,16 @@
 import { useForm, } from "react-hook-form"
+import Swal from "sweetalert2";
 
 
 export default function CheackoutFrom() {
+    const handleClick = () => {
+        Swal.fire({
+          title: "Success!",
+          text: "Your action was successful!",
+          icon: "success",
+          draggable: true,
+        });
+      };
     const {
         register,
         handleSubmit,
@@ -81,7 +90,7 @@ export default function CheackoutFrom() {
 
                     <p><input type="radio" name="radio" /> Cash on Deliveri</p>
                     <p><input type="radio" name="radio" /> paypal</p>
-                    <button className="bg-orange-500 text-center px-[100px] rounded-lg mb-5">Place order</button>
+                    <button className="bg-orange-500 text-center px-[100px] rounded-lg mb-5  " onClick={handleClick}>Place order</button>
 
 
 
