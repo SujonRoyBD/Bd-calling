@@ -29,7 +29,7 @@ const Banner2 = () => {
     ]
   return (
     <div className=''>
-    <div className='grid grid-cols-1 md:grid-cols-4 sm: px-16 justify-center items-center border-2 py-6 gap-5'>
+    <div className='grid grid-cols-1 md:grid-cols-4 sm: px-16 justify-center items-center border-2 py-6 gap-5 mt-5'>
       { 
         data.map((bus)=>{
             return <div key={bus.id}>
