@@ -31,7 +31,7 @@ const TshirtCtagory = () => {
     {
         img:"/assets/img/ralph.webp",
         title:"Ralph Edwards",
-        time:"2 min ago",
+        time:"3 min ago",
         desc:"200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA"
     },
 ]
