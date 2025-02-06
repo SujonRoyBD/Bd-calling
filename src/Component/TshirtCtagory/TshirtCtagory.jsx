@@ -58,7 +58,7 @@ const TshirtCtagory = () => {
                 <p>4 Review</p>
             </div>
             </div>
-            <h3 className='text-3xl text-orange-400'>$45.5</h3>
+            <h3 className='text-3xl text-orange-400'>$46.5</h3>
             <strong className='flex gap-2'>Category : <p className='text-gray-400'>
             Freeze</p></strong>
             <p className='text-gray-400 mt-4'>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar.</p>
