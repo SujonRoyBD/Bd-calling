@@ -13,6 +13,7 @@ const Banner = () => {
                 </div>
             <div className='grid grid-cols-1 md:grid-cols-2 px-12'>
                 <div className='mt-[100px]'>
+<<<<<<< HEAD
                     <h3 className='text-6xl text-black font-bold'>this is garates the point  <strong className='text-red-600'>food</strong>, great <br />
                         memorie
                     </h3>
@@ -20,6 +21,15 @@ const Banner = () => {
                         requesting this customies from here table he is those can make location or view.</p>
                     <div className='border-2 rounded-full '>
                         <div className='flex gap-12 border-2 bg-red-400 w-[200px] rounded-full'>
+=======
+                    <h3 className='text-6xl text-black font-bold'>food, great <br />
+                        memories
+                    </h3>
+                    <p> Enable diners to customize their bookin Enable diners to customize their booking by
+                        requesting  specific table location or view.</p>
+                    <div className='border-2 rounded-full mt-9'>
+                        <div className='flex gap-12 border-2 bg-orange-400 w-[200px] rounded-full'>
+>>>>>>> 567b0df (fff)
                             <CiLocationOn className='mt-1'/>
                             <p>Location</p>
                         </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Error = () => {
   return (
     <div>
-      Page nai
+      this page not found
     </div>
   )
 }
