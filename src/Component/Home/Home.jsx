@@ -5,10 +5,11 @@ import TopResturent from '../TopResturent/TopResturent'
 import Restuarent1 from '../resturent/Resturent'
 import ImgView from '../ImgView/ImgView'
 
+
 const Home = () => {
   return (
     <div>
-    
+      
       <Banner />
       <Banner2 />
       <TopResturent />
@@ -17,4 +18,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

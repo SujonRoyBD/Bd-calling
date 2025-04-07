@@ -42,10 +42,6 @@ const Cart = () => {
                     })
                 }
             </ul>
-<<<<<<< HEAD
-            <CheackoutFrom/>
-=======
->>>>>>> 567b0df (fff)
             <h3 className='text-end w-3/4 text-xl font-bold mt-1'><strong>Total Price : </strong> {totalPrice}</h3>
            
 

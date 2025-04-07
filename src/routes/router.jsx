@@ -21,6 +21,7 @@ import ShoopingCart from "../pages/Dashboard/ShoopingCart";
 import Setting from "../pages/Dashboard/Setting";
 import Logout from "../pages/Dashboard/Logout";
 import Filter from "../Component/Filter/Filter";
+import amni from './../Component/amni/amni';                                                            
 
 
 
@@ -108,6 +109,10 @@ export const router =createBrowserRouter([
             {
                 path : "/filter/:title",
                 element : <Filter/>
+            },
+            {
+                path : "/amni",
+                element : <amni/>
             },
           
            

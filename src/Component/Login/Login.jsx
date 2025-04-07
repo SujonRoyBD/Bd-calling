@@ -1,14 +1,7 @@
 import { useForm } from "react-hook-form"
-import Swal from "sweetalert2";
+
 const Login = () => {
-    const handleClick = () => {
-        Swal.fire({
-          title: "Success!",
-          text: "Your action was successful!",
-          icon: "success",
-          draggable: true,
-        });
-      };
+   
     const { register, handleSubmit, formState: { errors } } = useForm()
     const onSubmit = (data) => console.log(data)
     return (

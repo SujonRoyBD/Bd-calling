@@ -1,16 +1,8 @@
 import { useForm, } from "react-hook-form"
-import Swal from "sweetalert2";
 
 
 export default function CheackoutFrom() {
-    const handleClick = () => {
-        Swal.fire({
-          title: "Success!",
-          text: "Your action was successful!",
-          icon: "success",
-          draggable: true,
-        });
-      };
+   
     const {
         register,
         handleSubmit,
@@ -35,18 +27,18 @@ export default function CheackoutFrom() {
                         {errors.lastName && <p>Last name is required.</p>}
 
                         <label htmlFor="" className="grid">Company Name (optional)
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" /></label>
+                            <input {...register('age', { required: true })} className="border-2 rounded-md hover:border-orange-200" /></label>
                         {errors.age && <p>Please enter number for age.</p>}
 
                     </div>
 
                     <label htmlFor="" className="grid ">Street Address :
-                        <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
+                        <input {...register('age', { required: true})} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
                     {errors.age && <p>Please enter number for age.</p>}
 
                     <div className="flex flex-col md:flex-row gap-0 md:gap-[200px] mt-3">
                         <label htmlFor="" className="grid">States
-                            <select {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street">
+                            <select {...register('age', { required: true })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street">
                                 <option value="">select status</option>
                                 <option value="">Panchagarh</option>
                                 <option value="">Dhaka</option>
@@ -56,7 +48,7 @@ export default function CheackoutFrom() {
                         {errors.age && <p>Please enter number for age.</p>}
 
                         <label htmlFor="" className="grid ml-0 md:ml-4 h-8 ">States
-                            <select {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street ml-12">
+                            <select {...register('age', {  })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street ml-12">
                                 <option value="">select status</option>
                                 <option value="">Panchagarh</option>
                                 <option value="">Dhaka</option>
@@ -65,14 +57,7 @@ export default function CheackoutFrom() {
 
                         {errors.age && <p>Please enter number for age.</p>}
                     </div>
-                    <div className="flex flex-col md:flex-row gap-0  md:gap-[200px] mt-3">
-                        <label htmlFor="" className="grid">Email Address :
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
-                        {errors.age && <p>Please enter number for age.</p>}
-                        <label htmlFor="" className="grid">Phone Number :
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
-                        {errors.age && <p>Please enter number for age.</p>}
-                    </div>
+                   
                 </form>
             </div>
 
