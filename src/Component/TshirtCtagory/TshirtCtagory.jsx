@@ -44,7 +44,7 @@ const TshirtCtagory = () => {
         </div>
         <div>
             <div className='flex gap-8'>
-            <h2 className='text-3xl flex gap-6'> Long Sleeve T-Shirt</h2> <strong className='text bg-orange-100 rounded-full  md: px-2 mt-2'>in stock</strong>
+            <h2 className='text-3xl flex gap-6'> Long Sleever T-Shirt</h2> <strong className='text bg-orange-100 rounded-full  md: px-2 mt-2'>in stock</strong>
             </div>
             <div className='flex gap-6'>
             <div className='flex text-orange-400 mt-5 gap-3'>
