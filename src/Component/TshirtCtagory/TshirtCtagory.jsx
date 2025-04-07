@@ -14,7 +14,7 @@ const TshirtCtagory = () => {
         img:"/assets/img/kristin.webp",
         title:"Kristin Watson",
         time:"2 min ago",
-        desc:"Duis at ullamcorper nulla, eu dictum eros."
+        desc:"Duis at ullamcorper nulla, eu dictum ero."
     },
     {
         img:"/assets/img/jane.webp",
