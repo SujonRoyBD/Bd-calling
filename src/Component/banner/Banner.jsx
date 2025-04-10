@@ -15,7 +15,7 @@ const Banner = () => {
                 {/* Text Content */}
                 <div>
                     <h3 className='text-6xl text-black font-bold leading-tight'>
-                        This is the greatest point of <strong className='text-red-600'>food</strong>, great <br />
+                        This is the greates point of <strong className='text-red-600'>food</strong>, great <br />
                         memories
                     </h3>
                     <p className='mt-4 text-gray-700'>
