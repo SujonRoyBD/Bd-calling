@@ -53,7 +53,7 @@ const data = [
     {
       img:"/assets/img/crazy_toy.webp",
       title:"Long Sleeve T-shirt 9",
-      desc:"Delicious tackos appetizing",
+      desc:"Delicious tacko appetizing",
       pirce:"45.5"
     }
   ];
