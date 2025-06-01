@@ -49,7 +49,7 @@ const TopResturent = () => {
                         Restaurant</span></p>
                 </div>
                 <div className='w-1/3 md:ml-[400px] sm:justify-center'>
-                    <Link className=' gap-2 text-end' to="/vewresturent"><button className=' hover:text-green-400 flex md:ml-[400px'>see all <IoIosArrowForward className='mt-1.5' /> </button></Link>
+                    <Link className=' gap-2 text-end' to="/vewresturent"><button className=' hover:text-green-400 flex text-xl font-bold'>see all <IoIosArrowForward className='mt-1.5' /> </button></Link>
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 px-20 gap-3 '>

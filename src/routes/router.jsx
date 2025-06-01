@@ -15,6 +15,13 @@ import ViewTshirt from "../Component/ViewTshirt/ViewTshirt";
 import ViewLongTshirt from "../Component/ViewLongTshirt/ViewLongTshirt";
 import Showimg from "../Component/Showimg/Showimg";
 import Cart from "../Component/Cart/Cart";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import Order from "../pages/Dashboard/Order";
+import ShoopingCart from "../pages/Dashboard/ShoopingCart";
+import Setting from "../pages/Dashboard/Setting";
+import Logout from "../pages/Dashboard/Logout";
+import Filter from "../Component/Filter/Filter";
+
 
 
 export const router =createBrowserRouter([
@@ -77,7 +84,33 @@ export const router =createBrowserRouter([
             {
                 path : "/cart",
                 element : <Cart/>
-            }
+            },
+            {
+                path : "/dashboard",
+                element : <Dashboard/>
+            },
+            {
+                path : "/order",
+                element : <Order/>
+            },
+            {
+                path : "/shoppingCart",
+                element : <ShoopingCart/>
+            },
+            {
+                path : "/setting",
+                element : <Setting/>
+            },
+            {
+                path : "/logout",
+                element : <Logout/>
+            },
+            {
+                path : "/filter/:title",
+                element : <Filter/>
+            },
+          
+           
           
         ]
     }

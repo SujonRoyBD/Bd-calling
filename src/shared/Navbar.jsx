@@ -6,10 +6,11 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { useSelector } from 'react-redux';
+import { RiUser3Line } from "react-icons/ri";
 
 
 const Navbar = () => {
-  const carts = useSelector((state) => state.carts.carts);
+  const  carts = useSelector((state) => state.carts.carts);
   const [isActive, setIsActive] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,15 +22,16 @@ const Navbar = () => {
           <NavLink to='/'>
             <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </NavLink>
+         
 
           <div className='w-1/4 flex items-center'>
-            <input className='py-2 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
-            <button className='bg-orange-500 text-white text-lg font-bold rounded-r-full py-2 px-4'>Search</button>
+            <input className='py-1 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
+            <button className='bg-orange-500 text-white text-lg font-bold rounded-r-full py-1 px-4'>Search</button>
           </div>
 
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
-          <NavLink to='/about'>Blog</NavLink>
+          <NavLink to='/dashboard'>Dashboard</NavLink>
           <NavLink className="flex items-center gap-1" onMouseEnter={() => setIsOpen(!isOpen)} onMouseLeave={() => setIsOpen(!isOpen)} to='#category'>Category {!isOpen ? <MdKeyboardArrowDown className="mt-1" /> : <MdKeyboardArrowUp className="mt-1" />} </NavLink>
           <div className={`fixed top-16 right-[290px] ${isOpen && "bg-gray-950"}  text-white px-4 py-2 -mt-[2px]`}>
             {
@@ -42,8 +44,8 @@ const Navbar = () => {
             }
 
           </div>
-          <NavLink to="/cart" className="flex items-center gap-1"><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
-          <NavLink to='/error'>Error</NavLink>
+          <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
+          <NavLink to='/login'><RiUser3Line className='text-2xl'/></NavLink>
 
         </nav>
       </div>
@@ -52,8 +54,10 @@ const Navbar = () => {
       <div className='block md:hidden'>
         <div className='flex items-center justify-between px-4 py-1 bg-white -mt-5'>
           <div>
-            <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
+            <NavLink to="/"><img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} /></NavLink>
           </div>
+          <div><NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-black text-3xl' /> <sup className='text-black text-2xl'>{carts.length}</sup> </NavLink></div>
+
           <div className='cursor-pointer' onClick={() => setIsActive(!isActive)}>
             {
               isActive ? <IoMenu className='w-[32px] h-[32px]' /> : <RxCross2 className='w-[32px] h-[32px]' />
@@ -61,14 +65,18 @@ const Navbar = () => {
           </div>
         </div>
         {/* menu open */}
-        <div className={`{!isActive ? "left-0 w-2/3": "-left-[100%] w-full"} bg-orange-500 fixed h-[400px] top-10`}>
+        <div className='bg-orange-500'>
+        {/* <div className={`{!isActive ? "left-0 w-2/3": "-left-[100%] w-full"} bg-orange-500 fixed h-[400px] top-10`}> */}
           {
             !isActive && (
               <nav className='w-full text-black flex flex-col pl-4 pr-28 py-3'>
+               <NavLink to='dashboard'>Dashboard</NavLink>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>
-                <NavLink to='blog'>Blog</NavLink>
-                <NavLink to='contact us'>Contact Us</NavLink>
+                
+                <NavLink to='/vewresturent'>Contact Us</NavLink>
+                {/* <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink> */}
+                
               </nav>
             )
           }

@@ -94,7 +94,7 @@ const ViewTshirt = () => {
                             <img src={data?.img} alt={data?.title} width={500} height={400}/>
                         </div>
                         <div className='w-1/2'>
-                            <h3>{data?.title}</h3>
+                            <h3 className=''>{data?.title}</h3>
                             <h3>{data?.location}</h3>
                             <p>{data?.desc}</p>
                             <button>Add to Cart</button>
