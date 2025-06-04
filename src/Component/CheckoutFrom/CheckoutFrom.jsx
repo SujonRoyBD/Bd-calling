@@ -5,12 +5,12 @@ import Swal from "sweetalert2";
 export default function CheackoutFrom() {
     const handleClick = () => {
         Swal.fire({
-          title: "Success!",
-          text: "Your action was successful!",
-          icon: "success",
-          draggable: true,
+            title: "Success!",
+            text: "Your action was successful!",
+            icon: "success",
+            draggable: true,
         });
-      };
+    };
     const {
         register,
         handleSubmit,
