@@ -63,7 +63,7 @@ export default function CheackoutFrom() {
                                 <option value="">Rangpur</option>
                             </select></label>
 
-                        {errors.age && <p>Please enter number for age.</p>}
+                        {errors.age && <p>Please enter number for age</p>}
                     </div>
                     <div className="flex flex-col md:flex-row gap-0  md:gap-[200px] mt-3">
                         <label htmlFor="" className="grid">Email Address :
