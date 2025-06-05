@@ -27,7 +27,7 @@ const Restuarent1 = () => {
         {
             img: "/assets/img/Food5.png",
             titel: "Skateboard Shoe",
-            price: "$113"
+            price: "$123"
 
         },
         {
