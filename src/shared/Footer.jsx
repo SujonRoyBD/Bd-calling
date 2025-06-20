@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="footer bg-base-200 text-base-content p-10">
       <div className='grid grid-cols-1 md:grid-cols-5 gap-20 px-20 text-white'>
       <div>
-      <Link to="/"> <img src="../../public/assets/img/Discount me-01-01 1.png" alt="dis" height={1} className='h-9' /></Link>
+      <Link to="/"> <img src="/assets/img/Discount me-01-01 1.png" alt="dis" height={1} className='h-9' /></Link>
       <p>Ecommerce is a free UI Kit from Paperpillar
 that you can use for your personal or
 commercial project.</p>
@@ -48,11 +48,11 @@ commercial project.</p>
     <h6 className="footer-title">Download</h6><br />
    <div className='flex  gap-2'>
     <div>
-    <img src="../../public/assets/img/Qr Code.png" alt="" />
+    <img src="/assets/img/Qr Code.png" alt="dd" />
     </div>
     <div>
-    <img src="../../public/assets/img/GooglePlay.png" alt="" />
-    <img src="../../public/assets/img/AppStore.png" alt="" />
+    <img src="/assets/img/GooglePlay.png" alt="ff" />
+    <img src="/assets/img/AppStore.png" alt="ff" />
     </div>
    </div>
    

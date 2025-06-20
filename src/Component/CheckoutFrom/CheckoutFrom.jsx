@@ -1,104 +1,92 @@
-import { useForm, } from "react-hook-form"
+import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
-
 export default function CheackoutFrom() {
-    const handleClick = () => {
-        Swal.fire({
-            title: "Success!",
-            text: "Your action was successful!",
-            icon: "success",
-            draggable: true,
-        });
-    };
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm(); // watch input value by passing the name of it
+    } = useForm();
+
+    const onSubmit = (data) => {
+        console.log(data);
+        Swal.fire({
+            title: "Success!",
+            text: "Your order has been placed!",
+            icon: "success",
+        });
+    };
 
     return (
-        <div className="grid grid-cols-1  md:grid-cols-2 gap-10 md:gap-[390px]">
-
-            <div className="sm:-w-[80px]  md:w-[800px] md: px-20 mb-8 py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[100px]">
+            <div className="md:w-[800px] px-6 mb-8 py-5">
                 <h3 className="font-bold text-3xl mb-4">Billing Information</h3>
-                <form onSubmit={handleSubmit((data) => console.log(data))} className="   gap-5 border-2 sm:  px-8 py-5">
-
-                    <div className="  py-3  flex flex-col md:flex-row gap-8 rounded-full w-9 ml-0 md:-ml-6 mt-7">
-
-
-                        <label htmlFor="" className="grid ">Name :
-                            <input {...register('firstName')} className="border-2 rounded-md bg-gray-50 hover:border-orange-200" /> </label>
-
-                        <label htmlFor="" className="grid">Last name :
-                            <input {...register('lastName', { required: true })} className="border-2 rounded-md bg-gray-50 hover:border-orange-200" /> </label>
-                        {errors.lastName && <p>Last name is required.</p>}
-
-                        <label htmlFor="" className="grid">Company Name (optional)
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" /></label>
-                        {errors.age && <p>Please enter number for age.</p>}
-
+                <form onSubmit={handleSubmit(onSubmit)} className="gap-5 border-2 px-8 py-5">
+                    <div className="py-3 flex flex-col md:flex-row gap-8">
+                        <label className="grid">First Name:
+                            <input {...register('firstName', { required: "First name is required" })} className="border-2 rounded-md bg-gray-50" />
+                        </label>
+                        <label className="grid">Last Name:
+                            <input {...register('lastName', { required: "Last name is required" })} className="border-2 rounded-md bg-gray-50" />
+                        </label>
                     </div>
+                    <p className="text-red-500">{errors.firstName?.message || errors.lastName?.message}</p>
 
-                    <label htmlFor="" className="grid ">Street Address :
-                        <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
-                    {errors.age && <p>Please enter number for age.</p>}
+                    <label className="grid">Company Name (optional):
+                        <input {...register('companyName')} className="border-2 rounded-md" />
+                    </label>
 
-                    <div className="flex flex-col md:flex-row gap-0 md:gap-[200px] mt-3">
-                        <label htmlFor="" className="grid">States
-                            <select {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street">
-                                <option value="">select status</option>
-                                <option value="">Panchagarh</option>
-                                <option value="">Dhaka</option>
-                                <option value="">Rangpur</option>
-                            </select></label>
+                    <label className="grid mt-4">Street Address:
+                        <input {...register('streetAddress', { required: "Street address is required" })} className="border-2 rounded-md" />
+                    </label>
+                    <p className="text-red-500">{errors.streetAddress?.message}</p>
 
-                        {errors.age && <p>Please enter number for age.</p>}
+                    <label className="grid mt-4">State:
+                        <select {...register('state', { required: "State is required" })} className="border-2 rounded-md">
+                            <option value="">Select state</option>
+                            <option value="Panchagarh">Panchagarh</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Rangpur">Rangpur</option>
+                        </select>
+                    </label>
+                    <p className="text-red-500">{errors.state?.message}</p>
 
-                        <label htmlFor="" className="grid ml-0 md:ml-4 h-8 ">States
-                            <select {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200 w-[170px]" placeholder="enter your street ml-12">
-                                <option value="">select status</option>
-                                <option value="">Panchagarh</option>
-                                <option value="">Dhaka</option>
-                                <option value="">Rangpur</option>
-                            </select></label>
-
-                        {errors.age && <p>Please enter number for age</p>}
+                    <div className="flex flex-col md:flex-row gap-6 mt-4">
+                        <label className="grid">Email:
+                            <input {...register('email', { required: "Email is required" })} className="border-2 rounded-md" />
+                        </label>
+                        <label className="grid">Phone:
+                            <input {...register('phone', {
+                                required: "Phone number is required",
+                                pattern: {
+                                    value: /^\d+$/,
+                                    message: "Phone must be a number"
+                                }
+                            })} className="border-2 rounded-md" />
+                        </label>
                     </div>
-                    <div className="flex flex-col md:flex-row gap-0  md:gap-[200px] mt-3">
-                        <label htmlFor="" className="grid">Email Address :
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
-                        {errors.age && <p>Please enter number for age.</p>}
-                        <label htmlFor="" className="grid">Phone Number :
-                            <input {...register('age', { pattern: />\d+/ })} className="border-2 rounded-md hover:border-orange-200" placeholder="enter your street" /></label>
-                        {errors.age && <p>Please enter number for age.</p>}
-                    </div>
+                    <p className="text-red-500">{errors.email?.message || errors.phone?.message}</p>
+
+                    <button type="submit" className="bg-orange-500 mt-6 px-6 py-2 text-white rounded-md">
+                        Place Order
+                    </button>
                 </form>
             </div>
 
-            <div className=" px-6">
-                <h2 className="font-bold text-lg bg-slate-400 text-center rounded-md  w-full mt-4">Your order</h2>
+            <div className="px-6">
+                <h2 className="font-bold text-lg bg-slate-400 text-center rounded-md w-full mt-4">Your order</h2>
                 <div className="border-2 px-4 mt-4 rounded-md">
-                    <h3 className="text-2xl text-black font-bold">Order Summery</h3>
+                    <h3 className="text-2xl text-black font-bold">Order Summary</h3>
                     <p className="text-2xl text-center">Cart Not Found</p>
-                    <hr className="w-full bg-slate-500 h-0.5" />
+                    <hr className="w-full bg-slate-500 h-0.5 my-2" />
                     <p className="flex justify-between">Shipping <span>Free</span></p>
-                    <hr className="w-full bg-slate-500 h-0.5" />
                     <p className="flex justify-between">Total <span className="font-bold">0$</span></p>
 
-                    <h3 className="text-2xl f">Payment Method</h3>
-
-                    <p><input type="radio" name="radio" /> Cash on Deliveri</p>
-                    <p><input type="radio" name="radio" /> paypal</p>
-                    <button className="bg-orange-500 text-center px-[100px] rounded-lg mb-5  " onClick={handleClick}>Place order</button>
-
-
-
-
+                    <h3 className="text-2xl mt-4">Payment Method</h3>
+                    <p><input type="radio" name="payment" /> Cash on Delivery</p>
+                    <p><input type="radio" name="payment" /> PayPal</p>
                 </div>
             </div>
         </div>
-
-
-    )
+    );
 }
