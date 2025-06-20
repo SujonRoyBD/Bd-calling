@@ -18,7 +18,7 @@ export default function CheackoutFrom() {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[100px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[300px]">
             <div className="md:w-[800px] px-6 mb-8 py-5">
                 <h3 className="font-bold text-3xl mb-4">Billing Information</h3>
                 <form onSubmit={handleSubmit(onSubmit)} className="gap-5 border-2 px-8 py-5">
