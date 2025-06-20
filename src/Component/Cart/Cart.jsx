@@ -42,8 +42,9 @@ const Cart = () => {
                     })
                 }
             </ul>
+            <h3 className='text-end w-3/4 text-xl font-bold '><strong>Total Price : </strong> {totalPrice}</h3>
             <CheackoutFrom/>
-            <h3 className='text-end w-3/4 text-xl font-bold mt-1'><strong>Total Price : </strong> {totalPrice}</h3>
+            
            
 
         </div>

@@ -73,7 +73,7 @@ export default function CheackoutFrom() {
                 </form>
             </div>
 
-            <div className="px-6">
+            <div className="px-6 py-[55px]">
                 <h2 className="font-bold text-lg bg-slate-400 text-center rounded-md w-full mt-4">Your order</h2>
                 <div className="border-2 px-4 mt-4 rounded-md">
                     <h3 className="text-2xl text-black font-bold">Order Summary</h3>
