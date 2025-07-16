@@ -28,7 +28,7 @@ const ViewCart = () => {
   return (
     <div>
       <Items />
-      <div className="grid grid-cols-1 md:grid-cols-3 px-20 mt-5 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3  md:px-20 mt-5 gap-3">
         {data.map((item) => {
           const isCart = filterData?.find((cart) => cart.id == item.id)
           return <div key={item.id}>

@@ -40,11 +40,11 @@ const ViewTopRestaurant = () => {
         <div>
             {
                 filterData?.map((data, index)=>(
-                    <div key={index} className='w-full flex justify-center items-center gap-5'>
-                        <div className='w-1/2'>
+                    <div key={index} className='w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5 py-9 px-5'>
+                        <div className=' w-full md:w-4/6'>
                             <img src={data?.img} alt={data?.title} width={500} height={400}/>
                         </div>
-                        <div className='w-1/2'>
+                        <div className='w-full md:w-5/6'>
                             <h3>{data?.title}</h3>
                             <h3>{data?.location}</h3>
                             <p>{data?.desc?.main}</p>

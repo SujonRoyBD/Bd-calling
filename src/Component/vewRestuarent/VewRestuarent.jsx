@@ -59,7 +59,7 @@ const VewRestuarent = () => {
     ]
     return (
         <div>
-            <div className='flex justify-between px-20 mt-7'>
+            <div className='flex justify-between px-4 md:px-20 mt-7'>
             <div>
                     <h2 className='text-3xl '>Expore <strong className='text-orange-600'>Top Restaurants</strong></h2>
                     <p>Check your city and town <span className='text-gray-400'>Near by <br />
@@ -70,7 +70,7 @@ const VewRestuarent = () => {
                 </div>
             </div>
               
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 px-20 '>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 px-4 md:px-20 '>
                {
                 view.map((data)=>{
                     return <div key={data} className='border-2 px-5 py-6 rounded-xl'>

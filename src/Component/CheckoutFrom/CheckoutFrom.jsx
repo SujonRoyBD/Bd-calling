@@ -16,7 +16,6 @@ export default function CheackoutFrom() {
             icon: "success",
         });
     };
-
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[300px]">
             <div className="md:w-[800px] px-6 mb-8 py-5">
@@ -87,6 +86,6 @@ export default function CheackoutFrom() {
                     <p><input type="radio" name="payment" /> PayPal</p>
                 </div>
             </div>
-        </div>
+        </div>  
     );
 }

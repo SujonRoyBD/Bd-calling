@@ -57,7 +57,7 @@ const Restuarent1 = () => {
     ]
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 px-20'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-8 px-5 md:px-20 py-6'>
                 {
                     view.map((data, index) => {
                         return <div key={index}>

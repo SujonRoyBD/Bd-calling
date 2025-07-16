@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className=' bg-black'>
       <footer className="footer bg-base-200 text-base-content p-10">
-      <div className='grid grid-cols-1 md:grid-cols-5 gap-20 px-20 text-white'>
+      <div className='grid grid-cols-1 md:grid-cols-5 gap-20  md:px-20 text-white'>
       <div>
       <Link to="/"> <img src="/assets/img/Discount me-01-01 1.png" alt="dis" height={1} className='h-9' /></Link>
       <p>Ecommerce is a free UI Kit from Paperpillar

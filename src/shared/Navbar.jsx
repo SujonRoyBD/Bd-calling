@@ -14,6 +14,7 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   return (
     <div className='sticky top-0 z-50 py-3'>
       {/* large device  */}
@@ -65,11 +66,11 @@ const Navbar = () => {
           </div>
         </div>
         {/* menu open */}
-        <div className='bg-orange-500'>
+        <div className='bg-gray-500 text-white'>
         {/* <div className={`{!isActive ? "left-0 w-2/3": "-left-[100%] w-full"} bg-orange-500 fixed h-[400px] top-10`}> */}
           {
             !isActive && (
-              <nav className='w-full text-black flex flex-col pl-4 pr-28 py-3'>
+              <nav className='w-full flex flex-col pl-4 pr-28 py-3 text-white'>
                <NavLink to='dashboard'>Dashboard</NavLink>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='about'>About</NavLink>

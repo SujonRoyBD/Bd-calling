@@ -54,7 +54,7 @@ const Items = () => {
     return (
         <div>
             <div className='grid grid-cols-2 md:grid-cols-6 gap-16 
-            justify-items-center px-20 mt-8'>
+            justify-items-center px-4 md:px-20 mt-8'>
                 {
                     data.map((view)=>{
                         

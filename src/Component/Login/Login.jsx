@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form"
 import Swal from "sweetalert2";
 const Login = () => {
+    const [data, setdata] = useState (false)
     const handleClick = () => {
         Swal.fire({
           title: "Success!",
@@ -9,7 +11,8 @@ const Login = () => {
           draggable: true,
         });
       };
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    
+    const { register, handleSubmit, formState: { errors } } = useForm(false)
     const onSubmit = (data) => console.log(data)
     return (
         <div>
@@ -24,9 +27,11 @@ const Login = () => {
                     <input className="border-2 rounded-lg py-1 px-3 w-full" placeholder="Enter your email..." {...register("email", { required: true })} />
                     {errors?.email && <span>This field is required</span>}
                 </div>
+              
                 <div className="flex justify-center items-center mt-2">
                     <input className=" rounded-lg py-2 px-6 bg-orange-500 text-white text-lg font-bold" type="submit"  onClick={handleClick}/>
                 </div>
+               
             </form>
         </div>
     )

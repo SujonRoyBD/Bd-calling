@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const ViewTratoria = () => {
     
   return (
-    <div className='px-20 mt-7'>
+    <div className='px-4 md:px-20 mt-7'>
       <div>
         <img src="/assets/img/thumbnail.png" alt="thumbinal"height={300} width={1200} />
         <h2 className='text-2xl font-bold'>Trattoria dall'Oste</h2>

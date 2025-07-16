@@ -21,6 +21,7 @@ import ShoopingCart from "../pages/Dashboard/ShoopingCart";
 import Setting from "../pages/Dashboard/Setting";
 import Logout from "../pages/Dashboard/Logout";
 import Filter from "../Component/Filter/Filter";
+import Banner2 from "../Component/Banner2/Banner2";
 
 
 
@@ -40,6 +41,10 @@ export const router =createBrowserRouter([
             {
                 path:'/about',
                 element:<About/>
+            },
+            {
+                path:'/banner',
+                element:<Banner2/>
             },
             {
                 path:'/error',

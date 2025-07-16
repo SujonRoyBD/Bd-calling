@@ -42,17 +42,17 @@ const TopResturent = () => {
 
     return (
         <div>
-            <div className='mt-12 px-2 md:px-20 flex items-center justify-cneter '>
+            <div className='mt-12 px-4 md:px-20 flex gap-[70px] md:gap-[600px] justify-between py-4'>
                 <div className='w-2/3'>
                     <h2 className='text-3xl '>Explore <strong className='text-orange-600'>Top Restaurants</strong></h2>
                     <p>Check your city <span className='text-gray-400'>Near by <br />
                         Restaurant</span></p>
                 </div>
-                <div className='w-1/3 md:ml-[400px] sm:justify-center'>
-                    <Link className=' gap-2 text-end' to="/vewresturent"><button className=' hover:text-green-400 flex text-xl font-bold'>see all <IoIosArrowForward className='mt-1.5' /> </button></Link>
+                <div className='w-1/3 sm:justify-center mt-7 md:mt-0'>
+                    <Link className=' gap-2 text-end' to="/vewresturent"><button className=' hover:text-green-400 flex text-xl font-bold bg-green-500 px-2 rounded-md'>see all <IoIosArrowForward className='mt-1.5' /> </button></Link>
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 px-20 gap-3 '>
+            <div className='grid grid-cols-1 md:grid-cols-3 px-4 md:px-20 gap-3 '>
                 {
                     data.map((data, index) => {
                         return (
