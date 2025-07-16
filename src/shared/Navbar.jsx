@@ -27,7 +27,7 @@ const Navbar = () => {
 
           <div className='w-1/4 flex items-center'>
             <input className='py-1 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
-            <button className='bg-orange-500 text-white text-lg font-bold rounded-r-full py-1 px-4'>Search</button>
+            <button className='bg-green-500 text-white text-lg font-bold rounded-r-full py-1 px-4'>Search</button>
           </div>
 
           <NavLink to='/'>Home</NavLink>

@@ -20,7 +20,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-20  gap-8 items-center">
         {/* Text Content */}
         <div className='md:mt-[120px]'>
-          <h3 className="text-4xl text-black font-bold leading-4xl  uppercase">
+          <h3 className="text-3xl text-black font-bold leading-xl  uppercase">
             food, great <br /> memories
           </h3>
           <p className="text-gray-600 mt-4">
@@ -29,7 +29,7 @@ const Banner = () => {
 
           {/* Location Input Box */}
           <div className="mt-9 w-fit border-2 rounded-full p-1">
-            <div className="flex items-center gap-3 bg-orange-500 px-6 py-2 rounded-full">
+            <div className="flex items-center gap-3 bg-green-500 px-6 py-2 rounded-full">
               <CiLocationOn size={20} />
               <p className="text-white font-medium">Location</p>
             </div>
