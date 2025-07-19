@@ -1,11 +1,11 @@
+import React from 'react';
+
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../layout/Main";
 import Home from "../Component/Home/Home";
 
 import Error from "../Component/Error";
 import About from "../Component/About";
 import VewRestuarent from "../Component/vewRestuarent/VewRestuarent";
-import ViewTratoria from "../Component/ViewTratoria/ViewTratoria";
 import ViewCart from "../Component/ViewCart/ViewCart";
 import TshirtCtagory from "../Component/TshirtCtagory/TshirtCtagory";
 import Login from "../Component/Login/Login";
@@ -22,6 +22,10 @@ import Setting from "../pages/Dashboard/Setting";
 import Logout from "../pages/Dashboard/Logout";
 import Filter from "../Component/Filter/Filter";
 import Banner2 from "../Component/Banner2/Banner2";
+import ViewTratoria from '../Component/ViewTratoria/ViewTratoria';
+import Main from "../layout/Main";
+import Forget from '../Component/Forget/Forget';
+import Register from '../Component/RegisterFrom/RegisterFrom';
 
 
 
@@ -113,6 +117,21 @@ export const router =createBrowserRouter([
             {
                 path : "/filter/:title",
                 element : <Filter/>
+            },
+          
+            {
+                path : "/forget",
+                element : <Forget/>
+            },
+          
+            {
+                path : "https://google.com"
+                
+            },
+            {
+                path : "register",
+                element:<Register/>
+                
             },
           
            

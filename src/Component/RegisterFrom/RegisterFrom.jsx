@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form"
 import { Link } from 'react-router-dom';
 import Swal from "sweetalert2";
-const Login = () => {
+const Register = () => {
     const [data, setdata] = useState (false)
     const handleClick = () => {
         Swal.fire({
@@ -30,6 +30,16 @@ const Login = () => {
                     <input className="border-2 rounded-lg py-1 px-3 w-full" placeholder="Enter your email..." {...register("email", { required: true })} />
                     {errors?.email && <span>This field is required</span>}
                 </div>
+                <div>
+                    <label className="text-base font-bold text-black w-full flex justify-start">Password</label> <br />
+                    <input type='password' className="border-2 rounded-lg py-1 px-3 w-full" placeholder="Enter your password" {...register("password", { required: true })} />
+                    {errors?.password && <span>This field is required</span>}
+                </div>
+                <div>
+                    <label className="text-base font-bold text-black w-full flex justify-start">Contact</label> <br />
+                    <input type='number' className="border-2 rounded-lg py-1 px-3 w-full" placeholder="Enter your number" {...register("number", { required: true })} />
+                    {errors?.password && <span>This field is required</span>}
+                </div>
 
                 <div className='flex justify-between opacity-60'>
                     <div className='flex gap-2 py-3 text-xl'>
@@ -44,11 +54,10 @@ const Login = () => {
                 </div>
               
                 <div className="flex justify-center items-center mt-2">
-                    <button className=" rounded-lg py-1 px-6 bg-orange-500 w-full text-white text-lg font-bold" type="Login" >Login</button>
+                    <button className=" rounded-lg py-1 px-6 bg-orange-500 w-full text-white text-lg font-bold" type="Register" onClick={handleClick}>Register</button>
                 </div>
-                <div className='flex justify-center items-center text-xl py-3 opacity-60 gap-2'>Don't have account? 
-                    <Link to="/register"><strong>Register</strong></Link>
-                </div>
+                <div className='flex justify-center items-center text-xl py-3 opacity-60 gap-2'>Don't have account? <Link to="/login">
+                <strong>login</strong></Link></div>
                <div className='flex gap-4 justify-center items-center'><hr className='border w-[100px] border-black'/> <span className='-mt-[15px]'>or</span> <hr  className='border w-[100px] border-black'/></div>
 
               <Link to="https://google.com">
@@ -60,4 +69,4 @@ const Login = () => {
         </div>
     )
 }
-export default Login;
+export default Register;

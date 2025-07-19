@@ -19,14 +19,14 @@ const Navbar = () => {
     <div className='sticky top-0 z-50 py-3'>
       {/* large device  */}
       <div className='hidden md:block -mt-4'>
-        <nav className=' flex items-center justify-between bg-blue-500 px-20 pt-3 pb-2'>
+        <nav className=' flex items-center justify-between  px-20 pt-3 pb-2 bg-slate-200'>
           <NavLink to='/'>
             <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </NavLink>
          
 
-          <div className='w-1/4 flex items-center'>
-            <input className='py-1 px-3 w-full text-lg font-bold rounded-l-full outline-none border-none' type="text" name="" id="" placeholder='Search' />
+          <div className='w-1/4 flex items-center '>
+            <input className='py-1 px-3 w-full text-lg font-bold rounded-l-full border-black ' type="text" name="" id="" placeholder='Search' />
             <button className='bg-green-500 text-white text-lg font-bold rounded-r-full py-1 px-4'>Search</button>
           </div>
 
@@ -45,7 +45,7 @@ const Navbar = () => {
             }
 
           </div>
-          <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className='text-white text-3xl' /> <sup className='text-white text-2xl'>{carts.length}</sup> </NavLink>
+          <NavLink to="/cart" className="flex items-center gap-1 "><FaCartArrowDown className=' text-3xl opacity-60' /> <sup className=' text-2xl'>{carts.length}</sup> </NavLink>
           <NavLink to='/login'><RiUser3Line className='text-2xl'/></NavLink>
 
         </nav>
