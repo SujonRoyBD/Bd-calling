@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='sticky top-0 z-50 py-3'>
       {/* large device  */}
       <div className='hidden md:block -mt-4'>
-        <nav className=' flex items-center justify-between  px-20 pt-3 pb-2 bg-white'>
+        <nav className=' flex items-center justify-between  px-20 pt-3 pb-2 bg-white shadow-xl'>
           <NavLink to='/'>
             <img src="/assets/img/Discount me-01-01 1.png" alt="discount" height={170} width={170} />
           </NavLink>
